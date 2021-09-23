@@ -1,0 +1,5 @@
+---
+# defaults file for httpd_installation
+dest_file: /var/www/html
+source_folder: ~/ansible/MyWebSite/
+

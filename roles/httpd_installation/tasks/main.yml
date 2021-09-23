@@ -1,0 +1,13 @@
+---
+# tasks file for httpd_installation
+- block:
+  - name: Install Httpd
+    yum: name=httpd state=installed
+  - name: Copy file to nodes
+    copy: src={{ source_folder }} dest={{ dest_file}} mode=0555
+    notify: Restart httpd RedHat
+  - name: Start httpd
+    service: name=httpd state=started enabled=yes
+  when: ansible_os_family=="RedHat"
+
+

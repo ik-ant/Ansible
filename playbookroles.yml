@@ -1,0 +1,10 @@
+---
+
+- name: Install http by roles
+  hosts: all
+  become: yes
+
+
+  roles:
+    - { role:  httpd_installation, when: ansible_system== 'Linux' }
+

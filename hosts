@@ -1,6 +1,6 @@
 [database]
-database ansible_host=18.117.142.157	owner=Talant
+database ansible_host=52.14.168.43	owner=Talant
 
 [app]
-app ansible_host=18.224.95.81 	owner=Syrgak
+app ansible_host=18.188.71.228 	owner=Syrgak
 
