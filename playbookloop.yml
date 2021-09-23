@@ -1,0 +1,30 @@
+---
+- name: Loops
+  hosts: stage_server
+  become: yes
+
+  tasks:
+  - name: Say hello
+    debug: msg="Hello {{ item }}"
+    loop: 
+        - "Vays"
+        - "fsdfsd"
+        - "dasdA"  
+  - name: Loop untill example
+    shell: echo -n Z >> myfile.txt && cat myfile.txt
+    register: output
+    delay: 2
+    retries: 10
+    untill: output.stdout.find("ZZZZ") == false
+
+  - name : Print Final Output
+    debug: var=output.stdout
+ 
+
+    #  - name: Install many packages
+    #    yum: name {{ item }} state= installed
+    #    loop:
+            #            - python
+              #            - zip
+#            - tree
+

@@ -1,0 +1,6 @@
+[database]
+database ansible_host=18.117.142.157	owner=Talant
+
+[app]
+app ansible_host=18.224.95.81 	owner=Syrgak
+
