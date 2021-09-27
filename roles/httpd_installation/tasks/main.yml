@@ -8,4 +8,6 @@
     service: name=httpd state=started enabled=yes
   when: ansible_os_family=="RedHat"
 
-
+- name: Generate index.html
+  template: src=main.j2 dest {{ dest_folder }}/index.html node=0555
+  notify: Restart httpd RedHat

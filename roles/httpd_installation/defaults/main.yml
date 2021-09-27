@@ -1,5 +1,5 @@
 ---
 # defaults file for httpd_installation
-dest_file: /var/www/html
+dest_folder: /var/www/html
 
 
