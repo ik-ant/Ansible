@@ -2,7 +2,7 @@
 # tasks file for httpd_installation
 - block:
   - name: Install Httpd
-    yum: name=httpd state=removed
+    yum: name=httpd state=installed
     notify: Restart httpd RedHat
   - name: Start httpd
     service: name=httpd state=started enabled=yes
