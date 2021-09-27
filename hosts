@@ -2,5 +2,5 @@
 database ansible_host=192.168.0.104	owner=Talant
 
 [app]
-app ansible_host=192.168.0.208 	owner=Syrgak
+app ansible_host=192.168.0.105 	owner=Syrgak
 
